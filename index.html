@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Cooling Systems - Prague's 24/7 Precision Climate Control</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4C19.5817 4 15.7908 6.29167 13.5 9.66667C11.2092 13.0417 10 17.1667 10 21.3333C10 25.5 11.2092 29.625 13.5 33C15.7908 36.375 19.5817 38.6667 24 38.6667C28.4183 38.6667 32.2092 36.375 34.5 33C36.7908 29.625 38 25.5 38 21.3333C38 17.1667 36.7908 13.0417 34.5 9.66667C32.2092 6.29167 28.4183 4 24 4Z" fill="#2196F3" opacity="0.2"/>
+                        <path d="M24 8C20.6863 8 17.7647 9.79167 16 12.5C14.2353 15.2083 13.3333 18.5833 13.3333 22C13.3333 25.4167 14.2353 28.7917 16 31.5C17.7647 34.2083 20.6863 36 24 36C27.3137 36 30.2353 34.2083 32 31.5C33.7647 28.7917 34.6667 25.4167 34.6667 22C34.6667 18.5833 33.7647 15.2083 32 12.5C30.2353 9.79167 27.3137 8 24 8Z" fill="#2196F3"/>
+                        <circle cx="20" cy="18" r="2" fill="#E3F2FD"/>
+                        <circle cx="28" cy="18" r="2" fill="#E3F2FD"/>
+                        <circle cx="24" cy="26" r="2" fill="#E3F2FD"/>
+                    </svg>
+                    <span class="logo-text">Global Cooling Systems</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav">
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="language-switcher">
+                        <button class="lang-btn" id="lang-cz" onclick="setLanguage('CZ')">CZ</button>
+                        <button class="lang-btn active" id="lang-en" onclick="setLanguage('EN')">EN</button>
+                    </div>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Prague's 24/7<br />
+                        <span class="text-highlight">Precision Climate</span><br />
+                        Control
+                    </h1>
+                    <p class="hero-subtitle">
+                        Expert maintenance and emergency repair for industrial HVAC systems. 
+                        Certified technicians, guaranteed response times, and unmatched reliability.
+                    </p>
+                    <button class="cta-button">Book Emergency Repair</button>
+                    <div class="hero-info">
+                        <div class="info-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            +420 800 123 456
+                        </div>
+                        <div class="info-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            24/7 Available
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop" 
+                             alt="Professional HVAC technician" />
+                    </div>
+                    <div class="decorative-element"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features" id="services">
+        <div class="container">
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-bg">
+                        <svg class="feature-icon" width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Emergency Repair</h3>
+                    <p class="feature-desc">24/7 rapid response for critical HVAC failures across Prague</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon-bg">
+                        <svg class="feature-icon" width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Industrial Maintenance</h3>
+                    <p class="feature-desc">Preventive care programs for optimal system performance</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-bg">
+                        <svg class="feature-icon" width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">F-Gas Compliance</h3>
+                    <p class="feature-desc">EU certified refrigerant handling and leak detection</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon-bg">
+                        <svg class="feature-icon" width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Custom HVAC Installation</h3>
+                    <p class="feature-desc">Tailored climate solutions for data centers and facilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Contact Section -->
+    <section class="trust-section" id="about">
+        <div class="container">
+            <div class="trust-grid">
+                <!-- Trust Content -->
+                <div class="trust-content">
+                    <div class="trust-header">
+                        <p class="trust-label">Trusted Excellence</p>
+                        <h2 class="trust-title">Part of the Global Systems Group</h2>
+                        <p class="trust-text">
+                            As a member of the Global Systems Group, we bring international expertise and local dedication 
+                            to every project. Our commitment to excellence is backed by decades of industry leadership.
+                        </p>
+                    </div>
+
+                    <!-- Trust Signals -->
+                    <div class="trust-signals">
+                        <div class="trust-item">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div>
+                                <h4>EU F-Gas Certified</h4>
+                                <p>Fully compliant with European refrigerant regulations</p>
+                            </div>
+                        </div>
+
+                        <div class="trust-item">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div>
+                                <h4>24h Response Time</h4>
+                                <p>Emergency technicians on-site within 24 hours guaranteed</p>
+                            </div>
+                        </div>
+
+                        <div class="trust-item">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div>
+                                <h4>5 Year Warranty</h4>
+                                <p>Comprehensive coverage on all installations and major repairs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Info -->
+                    <div class="trust-highlight">
+                        <h3>Why Choose Us?</h3>
+                        <p>
+                            With over 500 satisfied corporate clients across Central Europe, we deliver precision 
+                            climate control for mission-critical environments. Our ISO-certified processes ensure 
+                            consistent quality and reliability.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper" id="contact">
+                    <div class="contact-form-card">
+                        <h3 class="form-title">Request a Quote</h3>
+                        <p class="form-subtitle">Get a personalized assessment within 24 hours</p>
+                        
+                        <form id="quoteForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@company.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+420 xxx xxx xxx" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Describe your HVAC requirements..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-button">Submit Request</button>
+                        </form>
+
+                        <p class="form-privacy">
+                            We respect your privacy. Your information is secure and will never be shared.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo and Company Info -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4C19.5817 4 15.7908 6.29167 13.5 9.66667C11.2092 13.0417 10 17.1667 10 21.3333C10 25.5 11.2092 29.625 13.5 33C15.7908 36.375 19.5817 38.6667 24 38.6667C28.4183 38.6667 32.2092 36.375 34.5 33C36.7908 29.625 38 25.5 38 21.3333C38 17.1667 36.7908 13.0417 34.5 9.66667C32.2092 6.29167 28.4183 4 24 4Z" fill="#2196F3" opacity="0.3"/>
+                            <path d="M24 8C20.6863 8 17.7647 9.79167 16 12.5C14.2353 15.2083 13.3333 18.5833 13.3333 22C13.3333 25.4167 14.2353 28.7917 16 31.5C17.7647 34.2083 20.6863 36 24 36C27.3137 36 30.2353 34.2083 32 31.5C33.7647 28.7917 34.6667 25.4167 34.6667 22C34.6667 18.5833 33.7647 15.2083 32 12.5C30.2353 9.79167 27.3137 8 24 8Z" fill="#2196F3"/>
+                            <circle cx="20" cy="18" r="2" fill="white"/>
+                            <circle cx="28" cy="18" r="2" fill="white"/>
+                            <circle cx="24" cy="26" r="2" fill="white"/>
+                        </svg>
+                        <span>Global Cooling Systems</span>
+                    </div>
+                    <p class="footer-desc">
+                        Premium HVAC solutions for industrial and commercial facilities. 
+                        Expert maintenance, emergency repairs, and custom installations across Prague.
+                    </p>
+                    <p class="footer-member">
+                        A member of <a href="https://gs-group.global" target="_blank">Global Systems Group</a> (gs-group.global)
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <div>
+                                <p class="contact-label">24/7 Emergency</p>
+                                <p>+420 800 123 456</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <div>
+                                <p>info@globalcooling.cz</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <div>
+                                <p>Prague, Czech Republic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 Global Cooling Systems. All rights reserved.</p>
+                
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

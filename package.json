@@ -1,0 +1,21 @@
+{
+  "name": "global-cooling-systems",
+  "version": "1.0.0",
+  "description": "Premium HVAC service company website for Global Cooling Systems",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "npx http-server -p 8000 -o"
+  },
+  "keywords": [
+    "hvac",
+    "cooling",
+    "prague",
+    "industrial",
+    "maintenance"
+  ],
+  "author": "Global Cooling Systems",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
